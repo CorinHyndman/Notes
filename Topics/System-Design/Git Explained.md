@@ -1,6 +1,4 @@
-
----
-## Overview
+___
 Git is a [[Distributed Version Control|distributed version control]] software system. It allows multiple developers to work on projects simultaneously and track changes efficiently. Git is best learnt through practice [here](https://learngitbranching.js.org/)
 ___
 ###### Keywords  
@@ -33,37 +31,137 @@ ___
 	- ``--soft`` does not touch the index file or the working tree at all but resets index to target. This leaves all your changed files to be committed.  
 	- ``--hard`` resets the index and working tree. Any changes to tracked files in the working tree since target are discarded.  
 - ``status``
+
+> [!Tip]
+> Use `git status` often it tells you what is going on in your repo.
+
 ___  
-###### Commonly used commands  
-| Command                   | Description                                               |
-| ------------------------- | --------------------------------------------------------- |
-| `git log`                 | Displays log messages of previous commits                 |
-| `git status`              | Shows the current status of the repo                      |
-| `git add [FILEPATH]`      | Moves a file from untracked to tracked (staging)          |
-| `git commit -m "MESSAGE"` | Commits staged files with a message                       |
-| `git push`                | Pushes local commits to the remote repository             |
-| `git pull`                | Fetches and merges remote changes into local repo         |
-| `git fetch`               | Fetches remote changes without applying them              |
-| `git diff HEAD~1`         | Shows differences between current repo and one commit ago |
+![[how-git-commands-work.png]]
+![[git-merge-git-rebase.png]]
 ___
 ## Flashcards
 #flashcards
-What is Git? :: A distributed version control system used to track and manage changes in files or codebases.
+**What is Git?** :: A distributed version control system that tracks changes in files, allowing multiple developers to collaborate efficiently.
+<!--SR:!2025-11-11,3,250-->
 
-What does git add do? :: Moves changes to the staging area.
+**What’s the difference between Git and GitHub?** :: Git is the version control tool; GitHub is a platform for hosting and sharing Git repositories online.
+<!--SR:!2025-11-09,1,233-->
 
-What’s the difference between git fetch and git pull? :: fetch downloads changes without applying them whereas pull downloads and merges them.
+**What is a repository?** :: A collection of files tracked by Git along with their complete version history.
+<!--SR:!2025-11-09,1,233-->
 
-How do you create and switch to a new branch in one command? :: git checkout -b branch_name
+**What is a branch?** :: A parallel line of development allowing you to work on features independently of the main codebase.
+<!--SR:!2025-11-09,1,233-->
 
-What does git reset --hard do? :: Resets the index and working tree, discarding all changes.
+**What is a commit?** :: A snapshot of the repository at a specific point in time, recording changes made since the last commit.
+<!--SR:!2025-11-11,3,253-->
 
-What does the -i flag in git rebase enable? :: Interactive mode for editing, rewording, splitting, or reordering commits.
+**What does `git init` do?** :: Initializes a new Git repository in the current directory.
+<!--SR:!2025-11-12,4,273-->
 
-How do you view the commit history? :: git log
+**What does `git clone` do?** :: Creates a copy of an existing remote repository locally.
+<!--SR:!2025-11-11,3,253-->
 
-How do you see changes between commits? :: git diff [commit1] [commit2]
+**What does `git status` show?** :: Displays the state of the working directory and staging area—what’s modified, staged, or untracked.
+<!--SR:!2025-11-09,1,233-->
+
+**What does `git add` do?** :: Moves changes from the working directory to the staging area, preparing them for a commit.
+<!--SR:!2025-11-11,3,250-->
+
+**What’s the difference between `git add .` and `git add -u`?** :: `git add .` stages new and modified files; `git add -u` stages modified and deleted files (but not new ones).
+<!--SR:!2025-11-09,1,233-->
+
+**What does `git commit -m "message"` do?** :: Records the staged changes to the repository with a descriptive message.
+<!--SR:!2025-11-09,1,233-->
+
+**How do you create and switch to a new branch?** :: `git checkout -b branch_name`
+<!--SR:!2025-11-11,3,253-->
+
+**How do you list all branches?** :: `git branch -l`
+<!--SR:!2025-11-12,4,270-->
+
+**How do you delete a branch locally?** :: `git branch -d branch_name`
+<!--SR:!2025-11-12,4,270-->
+
+**What does `git merge branch_name` do?** :: Combines changes from another branch into the current branch.
+<!--SR:!2025-11-11,3,253-->
+
+**What’s the difference between `git merge` and `git rebase`?** :: Merge creates a new commit combining changes; rebase moves commits to appear on top of another branch’s history.
+<!--SR:!2025-11-12,4,270-->
+
+**When should you use rebase over merge?** :: Use rebase to keep a clean, linear history; use merge to preserve context of parallel development.
+<!--SR:!2025-11-09,1,233-->
+
+**What does `git remote -v` show?** :: Lists all remote connections associated with the repository.
+<!--SR:!2025-11-09,1,233-->
+
+**What does `git fetch` do?** :: Downloads changes from the remote without merging them.
+<!--SR:!2025-11-11,3,253-->
+
+**What does `git pull` do?** :: Fetches and automatically merges changes from the remote branch into your current branch.
+<!--SR:!2025-11-11,3,250-->
+
+**What does `git push` do?** :: Uploads local commits to a remote repository.
+<!--SR:!2025-11-09,1,233-->
+
+**What does `git push -f` do?** :: Force-pushes local commits, overwriting the remote branch (use with caution).
+<!--SR:!2025-11-11,3,250-->
+
+**What does `git restore` do?** :: Restores files in the working directory to their last committed state.
+<!--SR:!2025-11-09,1,233-->
+
+**What does `git reset --soft HEAD~1` do?** :: Moves the last commit’s changes back to the staging area (undo commit but keep staged).
+<!--SR:!2025-11-11,3,250-->
+
+**What does `git reset --hard HEAD~1` do?** :: Completely removes the last commit and discards all related changes.
+<!--SR:!2025-11-09,1,233-->
+
+**How do you undo a specific commit without losing history?** :: `git revert <commit_hash>`
+<!--SR:!2025-11-09,1,233-->
+
+**What’s the difference between reset and revert?** :: Reset rewrites history (destructive), revert adds a new commit that undoes previous changes (safe).
+<!--SR:!2025-11-09,1,230-->
+
+**How do you view the commit history?** :: `git log`
+<!--SR:!2025-11-12,4,273-->
+
+**How do you view a simplified one-line commit log?** :: `git log --oneline`
+<!--SR:!2025-11-09,1,233-->
+
+**How do you see changes between commits?** :: `git diff [commit1] [commit2]`
+<!--SR:!2025-11-12,4,270-->
+
+**How do you see what changed in the last commit?** :: `git show HEAD`
+<!--SR:!2025-11-09,1,233-->
+
+**How do you see which branch a commit belongs to?** :: `git branch --contains <commit_hash>`
+<!--SR:!2025-11-09,1,230-->
+
+**What does `git rebase -i HEAD~n` do?** :: Opens an interactive rebase editor for the last _n_ commits, allowing rewording, squashing, or reordering.
+<!--SR:!2025-11-09,1,233-->
+
+**What is `git stash` used for?** :: Temporarily saves uncommitted changes so you can switch branches safely.
+<!--SR:!2025-11-09,1,233-->
+
+**How do you reapply stashed changes?** :: `git stash pop`
+<!--SR:!2025-11-09,1,233-->
+
+**How do you apply changes from a specific stash without deleting it?** :: `git stash apply stash@{n}`
+<!--SR:!2025-11-09,1,233-->
+
+**What does `git cherry-pick <commit>` do?** :: Applies a specific commit from one branch onto another.
+<!--SR:!2025-11-09,1,233-->
+
+**What command should you run often to understand your repo’s state?** :: `git status`
+<!--SR:!2025-11-12,4,270-->
+
+**Why should you write meaningful commit messages?** :: They make it easier to understand the project history and reason about changes later.
+<!--SR:!2025-11-11,3,250-->
+
+**How often should you commit?** :: Commit early and often—each commit should represent a logical, small unit of change.
+<!--SR:!2025-11-11,3,253-->
+
+**Why avoid force-pushing to shared branches?** :: It rewrites history, potentially causing data loss for others.
+<!--SR:!2025-11-09,1,233-->
 
 ---
-> [!Tip]
-> Use `git status` often it tells you what is going on in your repo.
