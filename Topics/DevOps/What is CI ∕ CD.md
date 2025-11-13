@@ -19,7 +19,7 @@ ___
 - **Deploy**
     - Releasing the build to staging or production environments.
 - **Artifact**
-    - A compiled or packaged piece of software ready for deployment (e.g., `.jar`, `.zip`, `.docker` image).
+    - A compiled or packaged piece of software ready for deployment (e.g., `.jar`, `.zip`, [[Docker|.docker]] image).
 - **Workflow**  
     - A defined set of steps triggered by specific events (like a push to `main`).
 - **Trigger**
