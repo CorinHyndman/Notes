@@ -1,8 +1,9 @@
 # File Structure  
-Resources/  
+```Resources/  
 Templates/  
 Topics/  
 ├── Computer-Science/  
-│     └── Networking/  
+│   └── Networking/  
 ├── DevOps/  
-└── Math/  
+└── Math/
+```
