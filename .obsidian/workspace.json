@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "8d08dbc1c987c171",
+    "type": "split",
+    "children": [
+      {
+        "id": "56a5f04c6bde8ead",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b479f70d0f52fee2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Topics/Computer-Science/Redis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Redis"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fef2cf1de3281d85",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1131e30f14516ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b7f830cae28e452",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e746698ac5a4acdf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6bee3215151d5083",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "30a62342dfb1e2a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "85c6adebf4dd83f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4667842ee77041ec",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Topics/System-Design/Git Explained.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Git Explained"
+            }
+          },
+          {
+            "id": "3b3f136c3a81551b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Topics/System-Design/Git Explained.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Git Explained"
+            }
+          },
+          {
+            "id": "103fbbc5ab132616",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3a1c1e99c4e4b708",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Topics/System-Design/Git Explained.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Git Explained"
+            }
+          },
+          {
+            "id": "22ef2ea6de8bce33",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-spaced-repetition:Review flashcards": false
+    }
+  },
+  "active": "b479f70d0f52fee2",
+  "lastOpenFiles": [
+    "Topics/DevOps/Docker.md",
+    "Topics/DevOps/Git Explained.md",
+    "Topics/DevOps/Distributed Version Control.md",
+    "Topics/Computer-Science/Redis.md",
+    "Topics/DevOps/What is CI ∕ CD.md",
+    "Topics/DevOps",
+    "Topics/Computer-Science/Networking/TLS & HTTPS.md",
+    "Topics/Computer-Science/Networking/OSI Model.md",
+    "Topics/Computer-Science/Networking/Certificate Authority.md",
+    "Topics/Computer-Science/Networking",
+    "Resources/what-is-osi-model.jpeg",
+    "Resources/ssl-tls-handshake.webp",
+    "Resources/public-certificate-authority.png",
+    "Resources/layers-of-osi-model.png",
+    "Resources/how-https-works.png",
+    "Resources/certificate-authority-chain.png",
+    "Topics/System-Design/Distributed Version Control.md",
+    "Topics/System-Design/Docker.md",
+    "Resources/must-know-docker-concepts.png",
+    "Resources/how-does-docker-work.png",
+    "Topics/System-Design/What is CI ∕ CD.md",
+    "Resources/how-git-commands-work.png",
+    "Resources/git-merge-git-rebase.png",
+    "Topics/System-Design/Git Explained.md",
+    "Topics/Computer-Science/Docker.md",
+    "Topics/Computer-Science/Docker/Docker Flashcards.md",
+    "Topics/Computer-Science/Docker",
+    "Topics/Math/init.md",
+    "Templates/Note Template.md",
+    "Topics/System-Design/init.md",
+    "Topics/Computer-Science/init.md"
+  ]
+}
