@@ -1,6 +1,10 @@
 ___
 Git is a [[Distributed Version Control|distributed version control]] software system. It allows multiple developers to work on projects simultaneously and track changes efficiently. Git is best learnt through practice [here](https://learngitbranching.js.org/)
 ___
+---
+![](https://www.youtube.com/watch?v=Ala6PHlYjmw)
+
+---
 ###### Keywords  
 - ``add``
 	- ``Optional flags``
